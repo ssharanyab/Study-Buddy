@@ -17,12 +17,12 @@ class SplashScreenActivity : AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
-                            },3000)
+                            },2000)
 
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
         progressBar.max =1000
         val currentProgress  =1000
-        ObjectAnimator.ofInt(progressBar,"progress",currentProgress).setDuration(3000).start()
+        ObjectAnimator.ofInt(progressBar,"progress",currentProgress).setDuration(2000).start()
 
 
 
